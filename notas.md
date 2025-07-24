@@ -1,0 +1,7 @@
+- AJAX es un estilo de desarrollo web que permite la actualización asíncrona de páginas web.
+- AJAX utiliza JavaScript para enviar y recibir datos sin recargar la página.
+- SPA (Single Page Application) es una aplicación web que carga una sola página HTML y actualiza dinámicamente el contenido.
+- Las SPA mejoran la experiencia del usuario al reducir el tiempo de carga y permitir interacciones más rápidas.
+- React es una biblioteca de JavaScript para construir interfaces de usuario, especialmente en aplicaciones SPA.
+- Redux es una biblioteca para manejar el estado de aplicaciones JavaScript, a menudo utilizada con React.
+- Los componentes en React son bloques reutilizables de código que representan partes de la interfaz de usuario.

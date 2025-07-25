@@ -68,3 +68,43 @@
     };
     ```
 - Los componentes de React se deben definir siempre con la primera letra en mayúscula, ya que React los identifica como componentes y no como elementos HTML. Por ejemplo, `App` es un componente válido, mientras que `app` no lo es.
+- En JavaScript las constantes se definen con `const`, las variables que pueden cambiar su valor se definen con `let` y las variables que no deberían cambiar su valor se definen con `var`. En React, es común utilizar `const` para definir componentes y funciones, ya que generalmente no se espera que cambien su referencia.
+- En JavaScript se sa el método `forEach` para iterar sobre un array y se le puede pasar como parámetro una función que se ejecutará para cada elemento del array. Por ejemplo:
+    ```javascript
+    const lista = [1, 2, 3];
+    lista.forEach((elemento) => {
+        console.log(elemento);
+    });
+    ```
+- En JavaScript puedes agregar un elemento a una lista con el método `push`, pero en React, a menudo se usan técnicas de programación funcional y una característica importante es la inmutabilidad. En lugar de modificar directamente un array, se crea una nueva copia del array con el nuevo elemento agregado. Por ejemplo:
+    ```javascript
+    const lista = [1, 2, 3];
+    const nuevaLista = lista.concat(4); // [1, 2, 3, 4]
+    ```
+- En React, es común utilizar el método `map` para transformar un array en otro array, aplicando una función a cada elemento. Por ejemplo:
+    ```javascript
+    const lista = [1, 2, 3];
+    const nuevaLista = lista.map((elemento) => elemento * 2);
+    console.log(nuevaLista); // [2, 4, 6]
+    const listaHtml = lista.map((elemento) => '<li>' + elemento + '</li>');
+    console.log(listaHtml); // ['<li>1</li>', '<li>2    </li>', '<li>3</li>']
+    ```
+- Los elemento de un array se pueden asignar a variables utilizando la desestructuración. Por ejemplo:
+    ```javascript
+    const lista = [1, 2, 3, 4, 5];
+    const [a, b, c, ...resto] = lista;
+    console.log(a); // 1
+    console.log(b); // 2
+    console.log(c); // 3
+    console.log(resto); // [4, 5]
+    ```
+- En JavaScript, es común usar objetos literales que sucede al enumerar propiedades y valores. Por ejemplo:
+    ```javascript
+    const persona = {
+        nombre: 'Alice',
+        edad: 30,
+        ciudad: 'Madrid'
+    };
+    console.log(persona.nombre); // Alice
+    console.log(persona['edad']); // 30
+    ```

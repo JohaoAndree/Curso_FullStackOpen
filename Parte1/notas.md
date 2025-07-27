@@ -2,13 +2,13 @@
 
 ## Creación de una aplicación React con Vite
 1. Ejecutamos el comando:
-    - `npm create vite@latest part1 -- --template react`
+    - `npm create vite@latest <nombreProyecto> -- --template react`
     - la terminal nos pedirá escoger el framework, escogemos react.
     - ahora pedirá una variante, como este curso enseñará react con javascript, elegimos javascript + SWC ya que leí que SWC es un compilador de JavaScript escrito en Rust que es más rápido que Babel, por lo tanto, se compila más rápido.
     Nota: en mi curso de Programación Web de la universidad, utilizamos Vite como herramienta de construcción, la librería react y typescript como lenguaje de programación así que será interesante hacer un proyecto en javascript.
 
 2. Navegamos al directorio del proyecto:
-    - `cd part1`
+    - `cd <nombreProyecto>`
 
 3. Instalamos las dependencias:
     - `npm install`

@@ -1,0 +1,54 @@
+/* Reset básico para eliminar márgenes y padding por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Asegurar que html, body y root ocupen toda la altura */
+html, body, #root {
+  height: 100%;
+}
+
+ul {
+  padding-left: 40px;
+}
+
+h1 {
+  color: rgb(231, 221, 221);
+  font-style: italic;
+}
+
+.app-container {
+  min-height: 100vh;
+  background-color: rgb(39, 39, 39);
+  color: rgb(231, 221, 221);
+  padding: 20px;
+}
+
+.person-item {
+  color: rgb(231, 221, 221);
+  padding-top: 3px;
+  font-size: 15px;
+}
+
+.notification {
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-width: 2px;
+}
+
+.notification-success {
+  color: #155724;
+  background: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.notification-error {
+  color: #721c24;
+  background: #f8d7da;
+  border-color: #f5c6cb;
+}

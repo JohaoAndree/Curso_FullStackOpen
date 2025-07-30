@@ -14,11 +14,6 @@ ul {
   padding-left: 40px;
 }
 
-h1 {
-  color: rgb(231, 221, 221);
-  font-style: italic;
-}
-
 .app-container {
   min-height: 100vh;
   background-color: rgb(39, 39, 39);
@@ -26,10 +21,81 @@ h1 {
   padding: 20px;
 }
 
+h1 {
+  color: rgb(231, 221, 221);
+  font-style: italic;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.subtittle {
+  color: rgb(231, 221, 221);
+  text-align: left;
+  font-size: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.subtittle-text {
+  color: rgb(231, 221, 221);
+  text-align: left;
+  font-size: 20px;
+}
+
+#filter-box {
+  width: 40%;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 0.5px solid rgb(39, 39, 39);
+  background-color: rgb(231, 221, 221);
+  color: rgb(39, 39, 39);
+  margin: 5px 0 5px 0;
+}
+
+.form-group {
+  font-size: 20px;
+  margin: 5px 0 5px 0;
+}
+
+#form-box {
+  width: 20%;
+  padding: 3px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 0.5px solid rgb(39, 39, 39);
+  background-color: rgb(231, 221, 221);
+  color: rgb(39, 39, 39);
+}
+
+.submit-button {
+  padding: 5px 10px;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 5px;
+  border: 0.5px solid rgb(231, 221, 221);
+  background-color: rgb(99, 99, 99);
+  color: rgb(231, 221, 221);
+  cursor: pointer;
+}
+
 .person-item {
   color: rgb(231, 221, 221);
-  padding-top: 3px;
-  font-size: 15px;
+  margin: 3px 3px;
+  font-size: 20px;
+}
+
+.delete-button {
+  padding: 3px 5px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 5px;
+  border: 0.5px solid rgb(231, 221, 221);
+  background-color: rgb(99, 99, 99);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
 }
 
 .notification {

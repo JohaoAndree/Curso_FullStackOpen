@@ -1,7 +1,7 @@
 const FilterBox = ({ searchValue, onSearchChange }) => {
     return (
         <div>
-            <input value={searchValue} onChange={onSearchChange} />
+            <input id="filter-box" placeholder="Ingrese nombre o número" value={searchValue} onChange={onSearchChange} />
         </div>
     )
 }

@@ -14,7 +14,6 @@ const App = () => {
   const [searchItem, setSearchItem] = useState('')
   const [notification, setNotification] = useState(null)
 
-  // Función helper para mostrar notificaciones
   const showNotification = (message, type = 'success') => {
     setNotification({ message, type })
     setTimeout(() => {
@@ -52,13 +51,12 @@ const App = () => {
             showNotification(`La información de ${newName} ya no se encuentra en el servidor.`, 'error')
           })
       }
-      return  // Sale de la función - no crear nueva persona
+      return
     }
     
     const personObject = {
       name: newName,
       number: newNumber,
-      // No incluir id - JSON Server lo genera automáticamente
     }
     
     personService

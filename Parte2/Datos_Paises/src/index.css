@@ -1,0 +1,263 @@
+/* Reset y configuración base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%);
+  color: #e0e0e0;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Contenedor principal */
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+/* Títulos */
+h1, h2, h3 {
+  color: #64ffda;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(100, 255, 218, 0.3);
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Input de búsqueda */
+input[type="text"] {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #64ffda;
+  border-radius: 10px;
+  color: #e0e0e0;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #00bcd4;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
+}
+
+input[type="text"]::placeholder {
+  color: #999;
+}
+
+/* Lista de países */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.country-item {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(100, 255, 218, 0.2);
+}
+
+.country-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(100, 255, 218, 0.2);
+}
+
+/* Botones */
+.show-button {
+  background: linear-gradient(45deg, #64ffda, #00bcd4);
+  color: #1a1a2e;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(100, 255, 218, 0.3);
+}
+
+.show-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(100, 255, 218, 0.5);
+  background: linear-gradient(45deg, #00bcd4, #64ffda);
+}
+
+/* Información del país */
+.title-country {
+  color: #64ffda;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem 0;
+  text-shadow: 0 2px 10px rgba(100, 255, 218, 0.5);
+}
+
+.title-languages,
+.title-flags {
+  color: #ff6b6b;
+  font-size: 1.8rem;
+  margin: 1.5rem 0 1rem 0;
+  text-shadow: 0 2px 4px rgba(255, 107, 107, 0.3);
+}
+
+/* Lista de idiomas */
+.item-language {
+  background: rgba(255, 107, 107, 0.2);
+  color: #ffcccb;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem 0;
+  border-radius: 20px;
+  display: inline-block;
+  margin-right: 0.5rem;
+  border: 1px solid rgba(255, 107, 107, 0.3);
+  transition: all 0.3s ease;
+}
+
+.item-language:hover {
+  background: rgba(255, 107, 107, 0.3);
+  transform: scale(1.05);
+}
+
+/* Contenedor de bandera */
+.flag-container {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(100, 255, 218, 0.2);
+}
+
+.flag-container img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.flag-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Información del clima */
+.title-climate {
+  color: #4fc3f7;
+  font-size: 1.8rem;
+  margin: 1.5rem 0 1rem 0;
+  text-shadow: 0 2px 4px rgba(79, 195, 247, 0.3);
+}
+
+/* Párrafos informativos */
+p {
+  font-size: 1.1rem;
+  margin: 0.8rem 0;
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border-left: 4px solid #64ffda;
+}
+
+/* Mensajes especiales */
+p:contains("No se ha ingresado"),
+p:contains("Demasiados países"),
+p:contains("No se encontraron"),
+p:contains("Cargando") {
+  background: rgba(255, 193, 7, 0.1);
+  border-left-color: #ffc107;
+  color: #fff3cd;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1.5rem;
+}
+
+/* Efectos de scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.App > * {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .App {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .title-country {
+    font-size: 2rem;
+  }
+  
+  .country-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .flag-container img {
+    max-width: 250px;
+  }
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #64ffda, #00bcd4);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #00bcd4, #64ffda);
+}

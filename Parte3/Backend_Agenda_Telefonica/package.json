@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "backend_agenda_telefonica",
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "morgan": "^1.10.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
